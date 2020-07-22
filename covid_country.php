@@ -33,7 +33,7 @@ function _getJSON($url)
     return json_decode($curlRes, true);
   };
 
-$countries = _getJSON('https://corona.lmao.ninja/countries/' . $country);
+$countries = _getJSON('https://disease.sh/v3/covid-19/countries/' . $country);
 
 // get latest post url
 $cases     = intval($countries['cases']);
